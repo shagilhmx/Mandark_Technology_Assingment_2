@@ -1,0 +1,28 @@
+.containerStyle {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.containerStyle.selected {
+    background-color: #1F51FF;
+}
+
+.containerStyle.selected,
+.containerStyle.selected span {
+    color: #FFF;
+}
+
+.IconTextStyle {
+    display: flex;
+    gap: 10px;
+}
+
+.IconTextStyle {
+    color: #67B7D1;
+}
+
+.IconTextStyle span {
+    color: #333;
+}

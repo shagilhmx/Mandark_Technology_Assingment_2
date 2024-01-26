@@ -1,0 +1,24 @@
+.containerStyle {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 80px;
+    gap: 40px;
+}
+
+.transferBoardStyle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.transferBoardStyle button {
+    width: 120px;
+    background-color: aliceblue;
+    border: 1px solid blue;
+    padding: 10px 4px;
+    cursor: pointer;
+}

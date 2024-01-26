@@ -1,0 +1,74 @@
+.containerStyle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.buttonStyle {
+    padding-top: 20px;
+}
+
+.startButton {
+    background-color: rebeccapurple;
+    border: 1px solid plum;
+    color: aliceblue;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.startButton.disabled {
+    transition: none;
+}
+
+.startButton:active:not(.startButton.disabled) {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
+.outerBoxStyle {
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    border: 1px solid blue;
+}
+
+.outerBoxStyle.disabled {
+    pointer-events: none;
+}
+
+.innerBoxStyle {
+    display: flex;
+}
+
+.innerBoxStyle:not(.innerBoxStyle:last-of-type) {
+    border-bottom: 1px solid blue;
+}
+
+.boxStyle {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.boxStyle:not(.boxStyle:last-of-type) {
+    border-right: 1px solid blue;
+}
+
+.displayBoard {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
